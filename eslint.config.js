@@ -2,10 +2,13 @@ import js from '@eslint/js';
 import react from 'eslint-plugin-react';
 import reactNative from 'eslint-plugin-react-native';
 import babelParser from '@babel/eslint-parser';
+import reactRecommended from 'eslint-plugin-react/configs/recommended.js';
 
 export default [
   js.configs.recommended,
+  reactRecommended,
   {
+    files: ['src/**/*.{js,jsx}', 'App.js'],
     plugins: {
       react,
       'react-native': reactNative,
