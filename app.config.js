@@ -1,6 +1,11 @@
-{
-  "expo": {
+import 'dotenv/config';
+
+export default {
     "name": "fullstack-part10",
+    extra: {
+      env: process.env.ENV,
+      APOLLO_URI: process.env.APOLLO_URI
+    },
     "slug": "fullstack-part10",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -27,4 +32,3 @@
       "favicon": "./assets/favicon.png"
     }
   }
-}

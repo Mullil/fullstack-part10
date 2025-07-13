@@ -1,5 +1,4 @@
 import { View } from "react-native";
-import Text from "../Text";
 import TopRow from "./TopRow";
 import { itemStyles } from "./ItemStyles";
 import BottomRow from "./BottomRow";
